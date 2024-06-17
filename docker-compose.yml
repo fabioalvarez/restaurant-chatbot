@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./internal:app/internal
+    restart: unless-stopped
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    restart: always
+    container_name: mongodb
+    hostname: host-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - ./data/db:/data/db
+      - ./data/log:/data/log/mongodb/
+    ports:
+      - "27017:27017"
+
+
