@@ -10,8 +10,7 @@ this project ensures a robust and efficient solution for easy restaurant booking
 customers interact with dining establishments and tailor their experience to their taste requirements and questions!
 
 This project was developed using as starting reference to Dave Ebbelaar and his great [tutorial](https://www.youtube.com/watch?v=3YPeh-3AFmM&t=1118s&ab_channel=DaveEbbelaar) 
-and [repository](https://github.com/daveebbelaar/python-whatsapp-bot/tree/main). Neuron Studios then evolve the project
-to use FastAPI instead of Flask, hexagonal architecture and Mongo DB to save and retrieve restaurant information.
+and [repository](https://github.com/daveebbelaar/python-whatsapp-bot/tree/main).
 
 ## Prerequisites
 
