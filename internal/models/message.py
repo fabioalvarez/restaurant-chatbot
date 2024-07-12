@@ -112,13 +112,3 @@ class MessageModel(BaseModel):
             self.is_valid_message = True
 
         return self
-
-
-{
-    "object": "asdasd",
-    "entry": [
-        {
-            "message": "asdasd"
-        }
-    ]
-}
